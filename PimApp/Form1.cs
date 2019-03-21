@@ -25,8 +25,11 @@ namespace PimApp
 
         private void btnClick_Click(object sender, EventArgs e)
         {
-            btnNumber = Convert.ToInt16(lblClicks.Text);
+            //Convert the text to a number
+			btnNumber = Convert.ToInt16(lblClicks.Text);
+			//adds one to the number
             btnNumber++;
+			//Convert number to text and place it in the label
             lblClicks.Text = btnNumber.ToString();
         
 
@@ -37,9 +40,13 @@ namespace PimApp
 
         private void btnPimButton_Click(object sender, EventArgs e)
         {
+            //Insert the word Pim plus whatever is already there
             txtPim.Text = "Pim" + txtPim.Text;
+            //Convert PimNumber from Text to an integer (a whole number)
             btnPimNumber = Convert.ToInt16(lblPimClick.Text);
+            //add 1 to PumNumber
             btnPimNumber++;
+            //Make PimCick PimButtonNumber
             lblPimClick.Text = btnPimNumber.ToString();
 
         }
